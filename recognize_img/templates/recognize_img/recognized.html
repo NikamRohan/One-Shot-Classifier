@@ -1,0 +1,15 @@
+{% extends "upload_img/base.html" %}
+
+{% block content %}
+	<div>
+		<br><br><br>
+		<div>
+			<img src={{img_url}}>
+			{% if flag %}
+				<h1>Hello  {{ predicted_person }}</h1>
+			{% else %}
+				<h1>Hello, Who Are You?</h1>
+			{% endif %}
+		</div>
+	</div>
+{% endblock content %}

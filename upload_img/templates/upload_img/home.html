@@ -1,0 +1,8 @@
+{% extends "upload_img/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="mtop-button">
+      <a href="{% url 'Upload' %}" class="btn btn-primary btn-lg">Upload Images To Database</a>
+      <a href="{% url 'Recognize' %}" class="btn btn-primary btn-lg">Recognize Face From Image</a>
+    </div>
+{% endblock content %}

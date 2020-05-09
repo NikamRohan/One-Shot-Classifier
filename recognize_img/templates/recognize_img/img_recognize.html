@@ -1,0 +1,18 @@
+{% extends "upload_img/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<div class="content-section">
+		<form method="POST" enctype="multipart/form-data" >
+			{% csrf_token %}
+			<fieldset class="form-group">
+	            <legend class="border-bottom mb-4">Upload Image To Recognize</legend>
+	            {{ form|crispy }}
+	        </fieldset>
+			<br>
+
+			<div class="form-group">
+				<button class="btn btn-success" type="submit">Recognize Person From Image</button>
+			</div>
+		</form>
+	</div>
+{% endblock content %}

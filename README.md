@@ -1,4 +1,5 @@
-![Django Logo](/images/Django_logo.png)   |    ![Pytorch Logo](/images/Pytorch_logo.png)
+<img src="images/Django_logo.png">
+<img src="images/Pytorch_logo.png">
 
 # One-Shot-Classifier
 Detect The Face from the Input image and Recognize the person in Image from very few past examples using Django & Pytorch.
